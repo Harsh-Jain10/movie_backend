@@ -7,7 +7,7 @@ function MovieDetail() {
     const [movie, setMovie] = useState(null);
 
     useEffect(() => {
-        axios.get(`http://localhost:3306/movies/${id}`)
+        axios.get(`https://movies-backend-txg4.onrender.com/movies/${id}`)
             .then(response => {
                 setMovie(response.data);
             })
