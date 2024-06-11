@@ -6,7 +6,7 @@ function HomePage() {
     const [movies, setMovies] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:3306/movies')
+        axios.get('https://movies-backend-txg4.onrender.com/movies')
             .then(response => {
                 setMovies(response.data);
             })
